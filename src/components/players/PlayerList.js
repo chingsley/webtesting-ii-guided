@@ -7,7 +7,7 @@ export default function Players({ players = [] }) {
   return (
     <ul>
       {players.map(player => (
-        <li key={player.id}>{player.name}</li>
+        <li key={player.id} data-testid="player">{player.name}</li>
       ))}
     </ul>
   );
